@@ -1,0 +1,78 @@
+/* Reset some default styles */
+
+#chart-container{
+  height: 500px; 
+ }
+
+/* Style for the featured section */
+.featured-section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Style for the featured image */
+.featured-image {
+  position: relative;
+}
+
+.featured-image img {
+  width: 100%;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Overlay text styling */
+.overlay-text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.overlay-text h1,
+.overlay-text h2,
+.overlay-text span {
+  margin: 0;
+}
+
+/* Article metadata styling */
+.article-meta {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+/* Article content styling */
+article {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+article p {
+  margin: 0 0 10px;
+}
+
+/* Style for the image and caption within the article */
+figure {
+  margin: 20px 0;
+}
+
+figure img {
+  width: 100%;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+figcaption {
+  font-size: 0.9em;
+  color: #555;
+  text-align: center;
+}

@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+#courses-section {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.courses-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.section-title {
+    font-size: 36px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.course-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+.course-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.course-description {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.course-link {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+.course-link:focus {
+    outline: none;
+}
+
+.hidden-content {
+    display: none;
+    margin-top: 10px;
+}
+
+.hidden-content.show {
+    display: block;
+}
+/* Different background colors for different course cards */
+.undergraduate {
+    border-left: 5px solid #3498db;
+}
+
+.postgraduate {
+    border-left: 5px solid #2ecc71;
+}
+
+.phd {
+    border-left: 5px solid #e74c3c;
+}
+
+
+.admission-form-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+#admission-form {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#admission-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+#admission-form input[type="text"],
+#admission-form input[type="tel"],
+#admission-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#admission-form input[type="submit"] {
+    background-color: #008CBA;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#admission-form input[type="submit"]:hover {
+    background-color: #005f5f;
+}
