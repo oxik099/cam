@@ -784,6 +784,7 @@ input {
   
   .slide__title {
     position: relative;
+text-size: 26px;
     z-index: 2; /* Ensures the text is above the overlay */
     align-items: center;
     padding-right: 10px;
@@ -796,7 +797,7 @@ input {
   }
   
   .slide__description {
-    font-size: 1rem;
+    font-size: 26px;
     color: #666;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -835,9 +836,9 @@ input {
   /* Responsive Design */
   @media (min-width: 768px) {
     .slide__description {
-        font-size: 0.9rem; /* Smaller font size for mobile devices */
+        font-size: 10px; /* Smaller font size for mobile devices */
         padding-left: 10%;
-   font-size: 1.2rem;
+
     }
   
     .btn {
