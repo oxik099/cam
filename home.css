@@ -775,7 +775,7 @@ input {
   
   .slide__title {
     position: relative;
-text-size: small;
+text-size: 18px;
     z-index: 2; /* Ensures the text is above the overlay */
   }
   
