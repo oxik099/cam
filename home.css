@@ -775,7 +775,7 @@ input {
   
   .slide__title {
     position: relative;
-text-size: 18px;
+text-size: 26px;
     z-index: 2; /* Ensures the text is above the overlay */
   }
   
@@ -786,7 +786,7 @@ text-size: 18px;
   }
   
   .slide__description {
-    font-size: 12px;
+    font-size: 26px;
     color: #666;
     margin-top: 20px;
     margin-bottom: 20px;
