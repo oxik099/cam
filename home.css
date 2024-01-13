@@ -823,9 +823,9 @@ input {
   /* Responsive Design */
   @media (min-width: 768px) {
     .slide__description {
-        font-size: 0.9rem; /* Smaller font size for mobile devices */
+        font-size: 10px; /* Smaller font size for mobile devices */
         padding-left: 10%;
-   font-size: 1.2rem;
+
     }
   
     .btn {
