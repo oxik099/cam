@@ -753,8 +753,17 @@ input {
   }
   
 
-
-
+  body {
+    border: 1px solid red;
+  }
+  
+  @media (max-width: 768px) {
+    .element {
+      width: 100%;
+      padding: 0 15px;
+    }
+  }
+  
 
 
 
@@ -776,6 +785,8 @@ input {
   .slide__title {
     position: relative;
     z-index: 2; /* Ensures the text is above the overlay */
+    align-items: center;
+    padding-right: 10px;
   }
   
   /* Rest of your CSS */
@@ -809,6 +820,7 @@ input {
   @media (max-width: 768px) {
     .slide__description {
         font-size: 0.9rem; /* Smaller font size for mobile devices */
+        padding-right: 10%;
     }
   
     .btn {
