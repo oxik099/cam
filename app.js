@@ -42,6 +42,32 @@ var mainSlider = new Swiper(".mySwiper2", {
   
 
 
+  function getSpacing(elementId) {
+    var element = document.getElementById(elementId);
+    if (!element) {
+        console.error("Element not found");
+        return;
+    }
+
+    var style = window.getComputedStyle(element);
+
+    return {
+        marginTop: style.marginTop,
+        marginRight: style.marginRight,
+        marginBottom: style.marginBottom,
+        marginLeft: style.marginLeft,
+        paddingTop: style.paddingTop,
+        paddingRight: style.paddingRight,
+        paddingBottom: style.paddingBottom,
+        paddingLeft: style.paddingLeft
+    };
+}
+
+// Example usage
+var spacing = getSpacing("myElementId"); // Replace with your element's ID
+console.log(spacing);
+
+
 
 
 
