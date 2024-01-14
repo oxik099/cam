@@ -1031,13 +1031,12 @@ input {
     text-align: center;
     line-height: 1.4;
   }
-  
-  h1 {
-    font-size: 2.2rem;
+  h2{
+    color: #c9c3c3;
   }
-  
+
   h2 {
-    color: #000;
+    color: #528588;
     font-size: 1.3rem;
     text-align: center;
     line-height: 1.4;
@@ -1083,6 +1082,16 @@ input {
     margin-bottom: 15px;
   }
   
+
+
+
+
+
+
+
+
+
+
 
 
 
