@@ -782,6 +782,10 @@ input {
   align-items: center;
   justify-content: center;
   min-height: 900px;
+  z-index: -1;
+  width: 100%;
+  height: 90%;
+  transition: z-index 1s ease;
 
 }
 .slide__header{
@@ -867,12 +871,7 @@ input {
   transition: background 0.3s cubic-bezier(0.99, 1, 0.92, 1);
 }
 .slide {
-  z-index: -1;
 
-  
-  width: 100%;
-  height: 90%;
-  transition: z-index 1s ease;
 }
 .slide.is-active {
   z-index: 19;
@@ -923,9 +922,7 @@ input {
     top: 10%;
   }
   
-.slide__img{
-  height:max-content;
-}
+
 }
 .slide__header {
   z-index: 10;
