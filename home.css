@@ -32,6 +32,7 @@
   align-items: center;
   height: 50px;
   overflow: hidden;
+  margin-right: 2rem;
 }
 
 .navbar img {
@@ -44,26 +45,36 @@
 .navbar ul {
   list-style: none;
   display: grid;
+  display: flex;
   grid-template-columns: repeat(6,1fr);
   justify-self: end;
-  
+  justify-content: space-evenly;
 }
 
 .nav-item a {
   color: #000;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   font-weight: 400;
+  padding: 0.3rem;
   text-decoration: none;
+  display: flex;
+  
   transition: color 0.3s ease-out;
+}
+
+.nav-item a:nth-child(1){
+  margin-left: 2.1rem;
 }
 
 .nav-item a:hover {
   color: #3498db;
+  text-decoration: none;
 }
 .nav-wrapper {
   position: relative; /* or 'fixed' */
   z-index: 10000; /* Very high value */
 }
+
 #hero {
   z-index: 1; /* Lower z-index than the mobile menu */
   /* Other styles... */
@@ -78,11 +89,19 @@
 /* SEARCH FUNCTION */
 
 #search-icon {
-  font-size: 0.9rem;
+  
+  font-size: 1rem;
   margin-top: 3px;
-  margin-left: 15px;
+  margin-left: 30px;
   transition: color 0.3s ease-out;
 }
+#search-icon, .navbar ul{
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
 
 #search-icon:hover {
   color: #3498db;
@@ -90,10 +109,12 @@
 }
 
 .search {
-  transform: translate(-35%);
-  -webkit-transform: translate(-35%);
+  transform: translate(-20%);
+  -webkit-transform: translate(-20%);
   transition: transform 0.7s ease-in-out;
   color: #3498db;
+  
+  
 }
 
 .no-search {
@@ -112,6 +133,8 @@
 
 .search-active {
   opacity: 1;
+  border: none;
+  outline: none;
   z-index: 0;
 }
 
@@ -236,7 +259,7 @@ input {
     background-color: #fff;
     width: 100%;
     height: calc(100vh - 55px);
-    transform: translate(-101%);
+    transform: translate(-120%);
     text-align: center;
     overflow: hidden;
   }
@@ -800,13 +823,14 @@ input {
   margin: 0 auto; /* Centers the text block */
   max-width: 800px; /* Optimal line length for reading */
   padding-left: 40px; /* Adds space around the text */
-
   opacity:0.5; /* Light background to reduce eye strain */
   border-left: 4px solid #0056b3; /* Adds a subtle branding element */
   box-shadow: 0 5px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
   text-align: justify; /* Ensures even alignment of text for a clean look */
   padding:auto;
   padding-right: 5%;
+  padding-bottom: 3%;
+  padding-top: 3%;
 }
 
 
@@ -827,13 +851,19 @@ input {
 .title-line {
   font-size: 3rem; /* Adjust title size */
   color: #333; /* Default text color */
-  margin-bottom: 15px; /* Space below title */
-  padding-top: 30%;
- 
+  margin-bottom: 10px; /* Space below title */
+  display: flex;
+}
+
+.title-line, .brand-name, .slide__content{
+
+
+  
 }
 
 .brand-name {
   color: red; /* Highlighted brand name color */
+  margin-right: 2rem;
 }
 
 /* Slide Description */
@@ -879,11 +909,15 @@ input {
   transition: z-index 1s ease;
 }
 .slide__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
-  margin: 0 ;
+  
   height: 95%;
   width: 95%;
   top: 2.5%;
+  
 }
 
 
@@ -921,6 +955,7 @@ input {
     height: 80%;
     width: 80%;
     top: 10%;
+    
   }
   
 .slide__img{
@@ -1030,7 +1065,8 @@ input {
   
   .feature-container img {
     width: 100%;
-    margin-bottom: 15px;
+    height: 300px;
+    margin-bottom: 20px;
   }
   
 
