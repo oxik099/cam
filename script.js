@@ -2,8 +2,6 @@
 
 
 
-
-
 document.addEventListener("DOMContentLoaded", function() {
   const universityCards = document.querySelectorAll('.university-card');
   
