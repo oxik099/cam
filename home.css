@@ -34,7 +34,7 @@
   overflow: hidden;
   
   margin-top: 1.1rem;
-  margin-right: 2rem;
+  margin-right: 1rem;
 }
 
 .navbar img {
@@ -174,9 +174,10 @@ input {
 
 .menu-toggle {
   justify-self: end;
-  margin-right: 1rem;
+  margin-right: 0;
   display: none;
   z-index: 1;
+  
 }
 
 .menu-toggle:hover{
@@ -297,6 +298,8 @@ input {
     display: block;
     cursor: pointer;
   }
+
+ 
   
   .mobile-nav {
   transform: translate(0%)!important;
