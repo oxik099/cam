@@ -69,7 +69,7 @@
 
 
 .nav-item a:nth-child(1){
-
+  margin-left: 3rem;
 }
 
 .nav-item a:hover {
@@ -96,17 +96,14 @@
 
 #search-icon {
   
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-top: 3px;
-  margin-left: 30px;
+  margin-left: 1rem;
   transition: color 0.3s ease-out;
   transition: transform 0.3s ease-out;
 }
 
-.smooth-transition{
-  transition: opacity 0.5s ease-in-out;
-  opacity: 1; 
-}
+
 
 #search-icon, .navbar ul{
 display: flex;
@@ -124,32 +121,40 @@ align-items: center;
 .search {
   transform: translate(-2%);
   -webkit-transform: translate(-2%);
-  transition: opacity 0.7s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
   color: #3498db;
   
   
 }
 
+
+
 .no-search {
-  transform: translate(0);
-  transition: transform 0.7s ease-in-out;
-  
+  transform: translate();
+  transition: transform 1s ease-in-out;
+  margin-left: 3rem;
 }
 
 .search-input {
-  transform: translate(2%);
+  
   display: none;
   opacity: 0;
   z-index: -1;
 
 }
 
+.search-input:hover{
+  background-color: #f0f0f0;
+}
+
+
+
 .search-active {
   opacity: 1;
   border: none;
   outline: none;
   z-index: 0;
-  
+
 }
 
 input {
@@ -157,7 +162,7 @@ input {
   border-left: 1px solid #ccc;
   border-radius: 0; /* FOR SAFARI */
   outline: 0;
-  padding: 5px;
+  padding: 4px;
 }
 
 /* MOBILE MENU & ANIMATION */
@@ -868,9 +873,9 @@ input {
   margin: 40%;
 }
 
-.slide__img {
+.slide__figure .slide__img {
   width: 100%;
-  
+  background-image: url(photo-1448932155749-638e51b56f03.jpeg);
   background-size: cover;
   background-position: center;
 }
@@ -940,18 +945,15 @@ input {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
-  
-  height: 95%;
-  width: 95%;
-  top: 2.5%;
+
+  height: 20rem;
   
 }
 
 
 
 .slide__figure {
-  z-index: 7;
+  z-index: 1;
   position: absolute;
   left: 0;
   right: 0;
@@ -964,17 +966,13 @@ input {
   transform: scale(0.8);
   transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
 }
-.slide__img {
-  position: relative;
-  display: block;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: 50%;
-  -webkit-backface-visibility: hidden;
-  height: 70%;
+ .slide__img {
   width: 100%;
-  filter: grayscale(0%);
-  transition: height 1s 1.4s cubic-bezier(0.19, 1, 0.22, 1), filter 0.4s 0.1s ease;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  position: static;
+  opacity: 0.5;
 }
 
 
