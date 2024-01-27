@@ -32,6 +32,7 @@
   align-items: center;
   height: 50px;
   overflow: hidden;
+  
   margin-top: 1.1rem;
   margin-right: 2rem;
 }
@@ -44,6 +45,7 @@
 }
 
 .navbar ul {
+ 
   list-style: none;
   display: grid;
   display: flex;
@@ -54,17 +56,20 @@
 
 .nav-item a {
   color: #000;
-  font-size: 1.1rem;
+  font-size: 3rem;
   font-weight: 400;
+
   padding: 0.3rem;
   text-decoration: none;
-  display: flex;
-  
+  display: block;
   transition: color 0.3s ease-out;
 }
 
+
+
+
 .nav-item a:nth-child(1){
-  margin-left: 3rem;
+
 }
 
 .nav-item a:hover {
@@ -169,8 +174,9 @@ input {
 
 .menu-toggle {
   justify-self: end;
-  margin-right: 25px;
+  margin-right: 1rem;
   display: none;
+  z-index: 1;
 }
 
 .menu-toggle:hover{
@@ -264,11 +270,13 @@ input {
     flex-direction: column;
     position: fixed;
     justify-content: start;
-    top: 55px;
+    top: 0;
+    left: 0;
     background-color: #fff;
     width: 100%;
-    height: calc(100vh - 55px);
-    transform: translate(-120%);
+    /* height: calc(100vh - 55px); */
+    height: 100%;
+    transform: translate(-100%);
     text-align: center;
     overflow: hidden;
   }
@@ -792,6 +800,15 @@ input {
       width: 100%;
       padding: 0 15px;
     }
+
+ 
+   
+
+    .navbar{
+      margin-right: 0rem;
+    }
+
+   
   }
   
 
@@ -822,7 +839,7 @@ input {
 }
 .slide__header{
   align-items: center;
-  padding-left: 5%;
+  margin: auto 0;
   padding-top: 1%;
 
 }
@@ -862,21 +879,26 @@ input {
 
 /* Title Line */
 .title-line {
-  font-size: 3rem; /* Adjust title size */
+  font-size: 5vw; /* Adjust title size */
   color: #333; /* Default text color */
   margin-bottom: 10px; /* Space below title */
   display: flex;
-}
-
-.title-line, .brand-name, .slide__content{
-
-
+  justify-content: center;
+  
+  text-align: left;
+  margin: 2rem;
   
 }
 
+.title-line, span{
+  display: flex;
+  
+}
+
+
 .brand-name {
   color: red; /* Highlighted brand name color */
-  margin-right: 2rem;
+  margin-right: 1.5rem;
 }
 
 /* Slide Description */
@@ -1192,6 +1214,18 @@ input {
     overflow: hidden;
     margin-bottom: 10%;
   
+  }
+
+
+  .col h1 {
+    font-size: 1.8rem;
+    
+  }
+
+   .col, .lead{
+    color: #000;
+    font-size: 1rem !important;
+    text-align: justify;
   }
   
   .card {
